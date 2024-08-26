@@ -82,6 +82,16 @@ input {
 	border: 3px solid rgba(0,0,0,0);
 }
 
+::-webkit-input-placeholder {
+	color: var(--accent-color);
+	/* Chromium-specific color */
+}
+
+::placeholder {
+	color: var(--accent-color);
+	/* Standard color */
+}
+
 input:focus{
 	background: #fff;
 	border: 3px solid var(--accent-color);
