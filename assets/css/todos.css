@@ -1,0 +1,108 @@
+:root{
+	--primary-color: #1E1E1E;
+	/* for buttons and highlights. */
+	--secondary-color: #FF5722;
+	/* for notifications and alerts */
+	--bg-gradient: linear-gradient(135deg, #2C2C2C, #1E1E1E);
+	--text-color: #E0E0E0;
+	/* for primary text */
+	--accent-color: #00BCD4;
+	/* for important actions or highlights. */
+}
+
+body {
+	font-family: Roboto;
+  background: -webkit-linear-gradient(135deg, #2C2C2C, #1E1E1E); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(135deg, #2C2C2C, #1E1E1E); /* FF3.6+ */
+  background:     -ms-linear-gradient(135deg, #2C2C2C, #1E1E1E); /* IE10 */
+  background:      -o-linear-gradient(135deg, #2C2C2C, #1E1E1E); /* Opera 11.10+ */
+  background:         linear-gradient(135deg, #2C2C2C, #1E1E1E); /* W3C */
+}
+/* background: linear-gradient(135deg, #F5F5F5, #E0E0E0); */
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+h1 {
+	background: var(--primary-color);
+	color: white;
+	margin: 0;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.fa-plus {
+	float: right;
+}
+
+
+
+
+li {
+	background: #fff;
+	height: 40px;
+	line-height: 40px;
+	color: var(--primary-color);
+}
+
+li:nth-child(2n){
+	background: #f7f7f7;
+}
+
+span {
+	background: var(--secondary-color);
+	height: 40px;
+	margin-right: 20px;
+	text-align: center;
+	color: white;
+	width: 0;
+	display: inline-block;
+	transition: 0.2s linear;
+	opacity: 0;
+}
+
+li:hover span {
+	width: 40px;
+	opacity: 1.0;
+}
+
+input {
+	font-size: 18px;
+	font-weight: bold;
+	color: var(--accent-color);
+	background-color: #f7f7f7;
+	width: 100%;
+	padding: 13px 13px 13px 20px;
+	box-sizing: border-box;
+	border: 3px solid rgba(0,0,0,0);
+}
+
+input:focus{
+	background: #fff;
+	border: 3px solid var(--accent-color);
+	outline: none;
+}
+
+#container {
+	width: 40%;
+	margin: 100px auto;
+	background: #f7f7f7;
+	box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+}
+
+.completed {
+	color: var(--text-color);
+	text-decoration: line-through;
+}
+
+
+@media (max-width: 767px) {
+	#container{
+		width: 90%;
+	}
+}
